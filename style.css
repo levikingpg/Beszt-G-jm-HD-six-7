@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.game {
+    width: 500px;
+    height: 200px;
+    border: 2px solid #000;
+    margin: 50px auto;
+    background-color: #f0f0f0; /* Csak hogy legyen valami háttere */
+    position: relative; /* Fontos az elemek elhelyezéséhez */
+}
+
+#babu {
+    width: 30px; /* Megnöveltem kicsit, hogy jobban látszódjon a kép */
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    
+    background-image: url('sahur.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red; 
+}
+
+.ugralas {
+    animation: ugral-muveszet 0.3s linear;
+}
+
+@keyframes ugral-muveszet {
+    0% { top: 150px; }
+    30% { top: 100px; }
+    70% { top: 100px; }
+    100% { top: 150px; }
+}
+
+#akadaly {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 175px;
+    left: 500px;
+    
+    
+    background-image: url('sixsevenn.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: blue;
+
+    animation: akadaly-mozgas 1s infinite linear;
+}
+
+@keyframes akadaly-mozgas {
+    0% { left: 500px; }
+    100% { left: -25px; }
+}
+
+p {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
