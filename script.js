@@ -21,7 +21,7 @@ var folyamatosEllenorzes = setInterval(function() {
     
     if (akadalyBalSzele < 20 && akadalyBalSzele > -20 && csavoTeteje >= 130) {
         azAkadaly.style.animation = "none";
-        alert("Vége a dalnak. Pontszámod: " + Math.floor(pontszamSzamlalo / 100));
+        alert("Vége a Beszt Géjm HD SIx 7 - nek. Pontszámod: " + Math.floor(pontszamSzamlalo / 100));
         
         pontszamSzamlalo = 0;
         azAkadaly.style.animation = "akadaly-mozgas 1s infinite linear";
